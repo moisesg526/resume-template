@@ -1,0 +1,23 @@
+.personal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.personal-info-input {
+  border: 2px solid #a3a3a3;
+  color: #a3a3a3;
+}
+
+.resume {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.g-i {
+    display: flex;
+    gap: 1rem;
+}
