@@ -1,5 +1,8 @@
 import { useState } from "react";
+import Resume from "./Resume";
+import PropTypes from "prop-types";
 import "./generalinfo.css";
+
 function GeneralInfo() {
   const [name, setName] = useState("John Doe");
   const [phone, setPhone] = useState("(123) 456-7890");
@@ -43,14 +46,16 @@ function GeneralInfo() {
           />
         </div>
       </div>
-      <div className="resume">
-        <h1>{name}</h1>
-        <div className="g-i">
-          <p>{phone}</p> <p>|</p>
-          <p>{email}</p> <p>|</p> <p>{location}</p>
-        </div>
-      </div>
+      <Resume name={name} phone={phone} email={email} location={location} />
     </div>
   );
 }
+
+GeneralInfo.propTypes = {
+  name: PropTypes.string,
+  phone: PropTypes.string,
+  email: PropTypes.string,
+  location: PropTypes.string,
+};
+
 export default GeneralInfo;

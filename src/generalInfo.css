@@ -2,22 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  justify-content: space-between;
 }
 
 .personal-info-input {
-  border: 2px solid #a3a3a3;
-  color: #a3a3a3;
+  padding: 2rem 2rem;
+  border: 2px solid #686868;
+  color: #fff;
+  
 }
 
-.resume {
-  background-color: #fff;
+.name,
+.phone,
+.email,
+.city {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.g-i {
-    display: flex;
-    gap: 1rem;
+  gap: 1rem;
 }
