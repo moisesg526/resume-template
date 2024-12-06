@@ -1,10 +1,12 @@
 import "./App.css";
-import GeneralInfo from "./GeneralInfo";
+// import Education from "./Education";
+// import GeneralInfo from "./GeneralInfo";
+import Input from "./Input";
 
 function App() {
   return (
     <div className="app">
-      <GeneralInfo />
+      < Input />
     </div>
   );
 }
