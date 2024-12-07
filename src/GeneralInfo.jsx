@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Resume from "./Resume";
+// import Resume from "./Resume";
 import PropTypes from "prop-types";
 import "./generalinfo.css";
 
@@ -11,7 +11,7 @@ function GeneralInfo() {
 
   return (
     <div className="personal-info">
-      <div className="personal-info-input">
+      <form className="form">
         <h2>Personal Info</h2>
         <div className="name">
           <label>Name:</label>
@@ -45,8 +45,8 @@ function GeneralInfo() {
             onChange={(event) => setLocation(event.target.value)}
           />
         </div>
-      </div>
-      <Resume name={name} phone={phone} email={email} location={location} />
+      </form>
+      {/* <Resume name={name} phone={phone} email={email} location={location} /> */}
     </div>
   );
 }

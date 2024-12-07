@@ -1,14 +1,6 @@
 .personal-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.personal-info-input {
-  padding: 2rem 2rem;
-  border: 2px solid #686868;
-  color: #fff;
-  
+  margin: auto;
+  width: 80%;
 }
 
 .name,
