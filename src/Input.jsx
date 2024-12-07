@@ -1,4 +1,5 @@
 import Education from "./Education";
+import Experience from "./Experience";
 import GeneralInfo from "./GeneralInfo";
 import "./input.css";
 
@@ -6,6 +7,7 @@ function Input() {
   return (
     <div className="input">
       <GeneralInfo />
+      <Experience />
       <Education />
     </div>
   );
