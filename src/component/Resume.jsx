@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./resume.css";
+import "../styles/resume.css";
 
 function Resume({ name, phone, email, location }) {
   return (

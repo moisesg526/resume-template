@@ -1,7 +1,7 @@
 import Education from "./Education";
 import Experience from "./Experience";
 import GeneralInfo from "./GeneralInfo";
-import "./input.css";
+import "../styles/input.css";
 
 function Input() {
   return (

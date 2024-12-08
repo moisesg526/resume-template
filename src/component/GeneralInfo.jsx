@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import Resume from "./Resume";
 import PropTypes from "prop-types";
-import "./generalinfo.css";
+import "../styles/generalInfo.css";
 
 function GeneralInfo() {
   const [name, setName] = useState("John Doe");
