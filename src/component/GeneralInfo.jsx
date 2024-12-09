@@ -1,6 +1,6 @@
-import { useState } from "react";
 // import Resume from "./Resume";
 import PropTypes from "prop-types";
+import { useState } from "react";
 import "../styles/generalInfo.css";
 
 function GeneralInfo() {
@@ -9,9 +9,19 @@ function GeneralInfo() {
   const [email, setEmail] = useState("Email@address.com");
   const [location, setLocation] = useState("New York, NY");
 
+  // const name = props.name;
+  // const phone = props.phone;
+  // const email = props.email;
+  // const location = props.location;
+
+  // const [update, setUpdate] useState([{
+
+  // }])
+
   return (
     <div className="personal-info">
       <form className="form">
+        <h3>{name}</h3>
         <h2>Personal Info</h2>
         <div className="name">
           <label>Name:</label>
