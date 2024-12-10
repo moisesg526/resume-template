@@ -3,10 +3,7 @@
   width: 80%;
 }
 
-.name,
-.phone,
-.email,
-.city {
+.field {
   padding: .5rem 0 0;
   display: flex;
   flex-direction: column;

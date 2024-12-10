@@ -7,5 +7,11 @@
 
 .g-i {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
 }

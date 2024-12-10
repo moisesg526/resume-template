@@ -1,31 +1,25 @@
 import PropTypes from "prop-types";
 import "../styles/resume.css";
-import GeneralInfo from "./GeneralInfo";
 
-function Resume(props) {
-  const name = props.name;
-  const phone = props.phone;
-  const email = props.email;
-  const location = props.location;
-
+function Resume({ generalInfo }) {
   return (
     <div className="resume">
-      {/* <h1>{name}</h1>
-      <div className="g-i">
-        <p>{phone}</p> <p>|</p>
-        <p>{email}</p> <p>|</p> <p>{location}</p>
-      </div> */}
-      <GeneralInfo name={name} phone={phone} email={email} location={location}/>
+      {generalInfo.map((info) => (
+        <div className="g-i" key={info.id}>
+          <h1>{info.name}</h1>
+          <div className="info">
+            <p>{info.phone}</p>
+            <p>{info.email}</p>
+            <p>{info.location}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
 
-// Add PropTypes validation
 Resume.propTypes = {
-  name: PropTypes.string.isRequired,
-  phone: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
+  generalInfo: PropTypes.array.isRequired,
 };
 
 export default Resume;
