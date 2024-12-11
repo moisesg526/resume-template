@@ -3,12 +3,7 @@
   width: 80%;
 }
 
-.company,
-.position,
-.location,
-.start-date,
-.end-date,
-.responsibilities {
+.field {
   padding: 0.5rem 0 0;
   display: flex;
   flex-direction: column;
