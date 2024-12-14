@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../styles/resume.css";
 
-function Resume({ generalInfo, experience }) {
+function Resume({ generalInfo, experience, education }) {
   return (
     <div className="resume">
       {generalInfo.map((info) => (
@@ -23,6 +23,14 @@ function Resume({ generalInfo, experience }) {
           </p>
           <p>{info.location}</p>
           <p>{info.responsibilities}</p>
+        </div>
+      ))}
+      {education.map((info) => (
+        <div className="education" key={info.id}>
+          <h3>{info.school}</h3>
+          <h5>{info.degree}</h5>
+          <p>{info.location}</p>
+          <p>{info.graduation}</p>
         </div>
       ))}
     </div>

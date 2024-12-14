@@ -3,8 +3,14 @@ body {
 }
 
 .app {
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 

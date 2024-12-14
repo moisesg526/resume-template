@@ -29,6 +29,16 @@ function App() {
     },
   ]);
 
+  const [education, setEducation] = useState([
+    {
+      id: 1,
+      school: "City University of New York",
+      degree: "Bachelors",
+      location: "New York, NY",
+      graduation: "01/01/2026",
+    },
+  ]);
+
   return (
     <div className="app">
       <div className="input-section">
@@ -37,9 +47,13 @@ function App() {
           setGeneralInfo={setGeneralInfo}
         />
         <Experience experience={experience} setExperience={setExperience} />
-        <Education />
+        <Education education={education} setEducation={setEducation} />
       </div>
-      <Resume generalInfo={generalInfo} experience={experience}/>
+      <Resume
+        generalInfo={generalInfo}
+        experience={experience}
+        education={education}
+      />
     </div>
   );
 }

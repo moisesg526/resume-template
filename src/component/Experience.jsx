@@ -13,8 +13,8 @@ function Experience({ experience, setExperience }) {
   };
 
   return (
-    <div className="experience">
-      <form className="form">
+    <div className="experience-input">
+      <form className="experience-form">
         <h2>Experience</h2>
         <div className="field">
           <label>Company</label>
